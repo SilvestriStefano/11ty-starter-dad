@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+html {
+    color-scheme: dark light;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+figure[role="img"]>* {
+    margin-bottom: 0.5rem;
+}
+
+img,
+picture {
+    display: flex;
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.1;
+}
+
+h2,
+h3,
+h4 {
+    margin-bottom: 0.65em;
+}
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+h3,
+h4 {
+    font-weight: 300;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+button {
+    outline-color: transparent;
+}
+
+/* Utility classes */
+.grid {
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.flex {
+    display: flex;
+    row-gap: var(--gap, 1rem);
+    column-gap: var(--gap, 1rem);
+}
+
+.sr-only {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

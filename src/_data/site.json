@@ -1,0 +1,12 @@
+{
+  "name": "Website Name",
+  "url": "https://website.link",
+  "title": "Title of the Website",
+  "description": "Website description",
+  "locale": "en_EN",
+  "lang": "en",
+  "github": "",
+  "linkedin": "",
+  "robots": "/robots.txt",
+  "sitemap": "/sitemap.xml"
+}

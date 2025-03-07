@@ -1,0 +1,23 @@
+{
+  "name": "dad",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "personal"
+  ],
+  "author": "Stefano Silvestri, Ph.D.",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5"
+  }
+}
