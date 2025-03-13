@@ -1,5 +1,6 @@
-// import {nameofshortcode} from "./nameoffile.js";
+import {image} from './image.js';
+import {imageBg} from './imageBg.js';
 
 export default {
-    // nameofshortcode
+    image, imageBg
 };
