@@ -23,10 +23,14 @@ _config/
 ├── libraries #contains the library instance (Markdown, HAML, Mustache, Liquid, etc. ) definition.
 ├── shortcodes/
 │   ├── async/
+│   │   ├── image.js
+│   │   ├── imageBG.js #for background images
 │   │   └── asyncShortCodes.js #export all the async shortcodes. See .eleventy.js.
 │   ├── primaryNavigation.js
 │   └── shortcodes.js #export all the shortcodes. See .eleventy.js
 ├── utils #contains more JS scripts that are used often in shortcodes.
+│   ├── imgCreate.js
+│   └── imgPresets.js
 ├── public #where the HTML files will be written.
 ├── src/
 │   ├── _data/ #where the data of the site will reside.
@@ -94,3 +98,21 @@ jobs:
           publish_dir: ./public
 
 ```
+
+## Publish on Cloudflare Pages
+To deploy your site to Cloudflare Pages:
+
+- Log in to the Cloudflare dashboard and select your account.
+- In Account Home, select **Workers & Pages > Create application > Pages > Connect to Git**.
+- Select the new GitHub repository that you created and, in the Set up builds and deployments section, select **Eleventy** as your Framework preset. Modify the default configuration with the following:
+
+|Configuration option | Value|
+|--|--|
+|Production branch | `master` |
+|Build command | `npm run build` |
+|Build directory | `public` |
+
+> The build command value is based off the `package.json` scripts entries
+> The build directory on the return value of `.eleventy.js`
+
+After deploying your site, you will receive a unique subdomain for your project on `*.pages.dev`. Every time you commit new code to your Eleventy site, Cloudflare Pages will automatically rebuild your project and deploy it. You will also get access to preview deployments on new pull requests, so you can preview how changes look to your site before deploying them to production.
