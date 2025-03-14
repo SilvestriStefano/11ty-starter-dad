@@ -1,11 +1,8 @@
-/public/*
+https://11ty-starter-dad.pages.dev/*
   Access-Control-Allow-Origin: *
   Content-Security-Policy: script-src 'self'; frame-ancestors 'none';
   Permissions-Policy: document-domain=()
   Referrer-Policy: no-referrer
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
-  X-Robots-Tag: nosnippet
-
-https://11ty-starter-dad.pages.dev/*
   X-Robots-Tag: noindex
